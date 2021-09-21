@@ -1,0 +1,1 @@
+C:\Users\benedetto.basile\Desktop\FORNARO\Programmi\verbali\env\Scripts\activate

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="get" action="generate">
+    <input type="radio" id="aspp" name="chi" value="aspp" checked> <label for="aspp">ASPP</label>
+    <input type="radio" id="cse" name="chi" value="cse"> <label for="cse">Staff CSE</label><br>
+
+
+    <label for="data">Data:</label><input type="date" id="data" name="data">
+    <label for="ora">Ora:</label><input type="time" id="ora" name="ora"><br>
+
+    <label for="pdl">PdL:</label><input type="text" id="pdl" name="pdl"><br>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>C</th>
+            <th>M</th>
+            <th>NC</th>
+            <th>Descrizione</th>
+            <th>Azione</th>
+        <tr>
+            <td>Delimitazione</td>
+            <td><input type="checkbox" id="delimitazione_c" name="delimitazione_c"></td>
+            <td><input type="checkbox" id="delimitazione_m" name="delimitazione_m"></td>
+            <td><input type="checkbox" id="delimitazione_nc" name="delimitazione_nc"></td>
+            <td><input type="text" id="delimitazione_descrizione" name="delimitazione_descrizione"></td>
+            <td><input type="text" id="delimitazione_azione" name="delimitazione_azione"></td>
+        </tr>
+        <tr>
+            <td>PdL</td>
+            <td><input type="checkbox" id="pdl_c" name="pdl_c"></td>
+            <td><input type="checkbox" id="pdl_m" name="pdl_m"></td>
+            <td><input type="checkbox" id="pdl_nc" name="pdl_nc"></td>
+            <td><input type="text" id="pdl_descrizione" name="pdl_descrizione"></td>
+            <td><input type="text" id="pdl_azione" name="pdl_azione"></td>
+        </tr>
+        <tr>
+            <td>DPI</td>
+            <td><input type="checkbox" id="dpi_c" name="dpi_c"></td>
+            <td><input type="checkbox" id="dpi_m" name="dpi_m"></td>
+            <td><input type="checkbox" id="dpi_nc" name="dpi_nc"></td>
+            <td><input type="text" id="dpi_descrizione" name="dpi_descrizione"></td>
+            <td><input type="text" id="dpi_azione" name="dpi_azione"></td>
+        </tr>
+        <tr>
+            <td>Ordine</td>
+            <td><input type="checkbox" id="ordine_c" name="ordine_c"></td>
+            <td><input type="checkbox" id="ordine_m" name="ordine_m"></td>
+            <td><input type="checkbox" id="ordine_nc" name="ordine_nc"></td>
+            <td><input type="text" id="ordine_descrizione" name="ordine_descrizione"></td>
+            <td><input type="text" id="ordine_azione" name="ordine_azione"></td>
+        </tr>
+        <tr>
+            <td>Sollevamenti</td>
+            <td><input type="checkbox" id="sollevamenti_c" name="sollevamenti_c"></td>
+            <td><input type="checkbox" id="sollevamenti_m" name="sollevamenti_m"></td>
+            <td><input type="checkbox" id="sollevamenti_nc" name="sollevamenti_nc"></td>
+            <td><input type="text" id="sollevamenti_descrizione" name="sollevamenti_descrizione"></td>
+            <td><input type="text" id="sollevamenti_azione" name="sollevamenti_azione"></td>
+        </tr>
+        <tr>
+            <td>Attrezzature</td>
+            <td><input type="checkbox" id="attrezzature_c" name="attrezzature_c"></td>
+            <td><input type="checkbox" id="attrezzature_m" name="attrezzature_m"></td>
+            <td><input type="checkbox" id="attrezzature_nc" name="attrezzature_nc"></td>
+            <td><input type="text" id="attrezzature_descrizione" name="attrezzature_descrizione"></td>
+            <td><input type="text" id="attrezzature_azione" name="attrezzature_azione"></td>
+        </tr>
+        <tr>
+            <td>Guida</td>
+            <td><input type="checkbox" id="guida_c" name="guida_c"></td>
+            <td><input type="checkbox" id="guida_m" name="guida_m"></td>
+            <td><input type="checkbox" id="guida_nc" name="guida_nc"></td>
+            <td><input type="text" id="guida_descrizione" name="guida_descrizione"></td>
+            <td><input type="text" id="guida_azione" name="guida_azione"></td>
+        </tr>
+        <tr>
+            <td>Ponteggi</td>
+            <td><input type="checkbox" id="ponteggi_c" name="ponteggi_c"></td>
+            <td><input type="checkbox" id="ponteggi_m" name="ponteggi_m"></td>
+            <td><input type="checkbox" id="ponteggi_nc" name="ponteggi_nc"></td>
+            <td><input type="text" id="ponteggi_descrizione" name="ponteggi_descrizione"></td>
+            <td><input type="text" id="ponteggi_azione" name="ponteggi_azione"></td>
+        </tr>
+        <tr>
+            <td>PIMUS</td>
+            <td><input type="checkbox" id="pimus_c" name="pimus_c"></td>
+            <td><input type="checkbox" id="pimus_m" name="pimus_m"></td>
+            <td><input type="checkbox" id="pimus_nc" name="pimus_nc"></td>
+            <td><input type="text" id="pimus_descrizione" name="pimus_descrizione"></td>
+            <td><input type="text" id="pimus_azione" name="pimus_azione"></td>
+        </tr>
+        <tr>
+            <td>Quota</td>
+            <td><input type="checkbox" id="quota_c" name="quota_c"></td>
+            <td><input type="checkbox" id="quota_m" name="quota_m"></td>
+            <td><input type="checkbox" id="quota_nc" name="quota_nc"></td>
+            <td><input type="text" id="quota_descrizione" name="quota_descrizione"></td>
+            <td><input type="text" id="quota_azione" name="quota_azione"></td>
+        </tr>
+        <tr>
+            <td>Confinati</td>
+            <td><input type="checkbox" id="confinati_c" name="confinati_c"></td>
+            <td><input type="checkbox" id="confinati_m" name="confinati_m"></td>
+            <td><input type="checkbox" id="confinati_nc" name="confinati_nc"></td>
+            <td><input type="text" id="confinati_descrizione" name="confinati_descrizione"></td>
+            <td><input type="text" id="confinati_azione" name="confinati_azione"></td>
+        </tr>
+        <tr>
+            <td>Altro</td>
+            <td><input type="checkbox" id="altro_c" name="altro_c"></td>
+            <td><input type="checkbox" id="altro_m" name="altro_m"></td>
+            <td><input type="checkbox" id="altro_nc" name="altro_nc"></td>
+            <td><input type="text" id="altro_descrizione" name="altro_descrizione"></td>
+            <td><input type="text" id="altro_azione" name="altro_azione"></td>
+        </tr>
+    </table>
+
+    <input type="radio" id="conforme" name="gravita" value="conforme" checked> <label for="conforme">conforme</label>
+    <input type="radio" id="da_migliorare" name="gravita" value="da_migliorare"> <label for="da_migliorare">da migliorare</label>
+    <input type="radio" id="nc_grigia" name="gravita" value="nc_grigia"> <label for="nc_grigia">nc_grigia</label>
+    <input type="radio" id="nc_gialla" name="nc_gialla" value="nc_gialla"> <label for="nc_gialla">nc_gialla</label>
+    <input type="radio" id="nc_rossa" name="gravita" value="nc_rossa"> <label for="nc_rossa">nc_rossa</label><br>
+
+
+    <button type="submit">Salva</button>
+</form>
+
+
+</body>
+
+
+</html>
