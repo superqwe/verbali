@@ -13,3 +13,6 @@ pyvenv.cfg
 pip-selfcheck.json
 
 /main.py
+static/bootstrap
+*.xml
+.idea

@@ -1,6 +1,8 @@
 import cherrypy
+import sqlite3
 
 FIN = 'base.html'
+DB_STRING = "db.sqlite"
 
 
 def leggi_html():
@@ -30,8 +32,10 @@ class InserisciVerbale(object):
               altro=None, altro_descrizione=None, altro_azione=None,
               gravita=None
               ):
-        print(data, ora)
-        return 'verbale eseguito da %s - n.pdl %s' % (chi, npdl)
+
+
+
+        return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--' % (chi, npdl, dpi_descrizione)
 
 
 if __name__ == '__main__':
