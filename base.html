@@ -5,156 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+
+    <script src="https://kit.fontawesome.com/01814312e1.js" crossorigin="anonymous"></script>
 
     <title>Title</title>
 </head>
+
+<i class="fas fa-thumbs-up fa-5x"></i>
+
 <body>
+<div class="container">
 
-<form method="post" action="salva">
-    <input type="radio" id="aspp" name="chi" value="a" checked> <label for="aspp">ASPP</label>
-    <input type="radio" id="cse" name="chi" value="c"> <label for="cse">Staff CSE</label><br>
+    <form method="post" action="salva">
 
+        <div class="input-group">
+            <div class="col-3 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="aspp" name="chi" value="a" checked>
+                <label class="form-check-label" for="aspp">ASPP</label>
+            </div>
 
-    <label for="data">Data:</label><input type="date" id="data" name="data">
-    <label for="ora">Ora:</label><input type="time" id="ora" name="ora"><br>
+            <div class="col-3 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="cse" name="chi" value="c">
+                <label class="form-check-label" for="cse">Staff CSE</label><br>
+            </div>
+        </div>
 
-    <label for="pdl">PdL:</label><input type="text" id="pdl" name="npdl"><br>
+        <div class="input-group">
+            <span class="input-group-text">Data e orario</span>
+            <input class="form-control" type="date" id="data" name="data">
+            <input class="form-control" type="time" id="ora" name="ora">
+        </div>
 
-    <table>
-        <tr>
-            <th></th>
-            <th>C</th>
-            <th>M</th>
-            <th>NC</th>
-            <th>NA</th>
-            <th>Descrizione</th>
-            <th>Azione</th>
-        <tr>
-            <td>Delimitazione</td>
-            <td><input type="radio" id="delimitazione_c" name="delimitazione" value="c" checked></td>
-            <td><input type="radio" id="delimitazione_m" name="delimitazione" value="m"></td>
-            <td><input type="radio" id="delimitazione_cn" name="delimitazione" value="n"></td>
-            <td><input type="radio" id="delimitazione_na" name="delimitazione" value="a"></td>
-            <td><input type="text" id="delimitazione_descrizione" name="delimitazione_descrizione"></td>
-            <td><input type="text" id="delimitazione_azione" name="delimitazione_azione"></td>
-        </tr>
-        <tr>
-            <td>PdL</td>
-            <td><input type="radio" id="pdl_c" name="pdl" value="c" checked></td>
-            <td><input type="radio" id="pdl_m" name="pdl" value="m"></td>
-            <td><input type="radio" id="pdl_cn" name="pdl" value="n"></td>
-            <td><input type="radio" id="pdl_na" name="pdl" value="a"></td>
-            <td><input type="text" id="pdl_descrizione" name="pdl_descrizione"></td>
-            <td><input type="text" id="pdl_azione" name="pdl_azione"></td>
-        </tr>
-        <tr>
-            <td>DPI</td>
-            <td><input type="radio" id="dpi_c" name="dpi" value="c" checked></td>
-            <td><input type="radio" id="dpi_m" name="dpi" value="m"></td>
-            <td><input type="radio" id="dpi_cn" name="dpi" value="n"></td>
-            <td><input type="radio" id="dpi_na" name="dpi" value="a"></td>
-            <td><input type="text" id="dpi_descrizione" name="dpi_descrizione"></td>
-            <td><input type="text" id="dpi_azione" name="dpi_azione"></td>
-        </tr>
-        <tr>
-            <td>Ordine</td>
-            <td><input type="radio" id="ordine_c" name="ordine" value="c" checked></td>
-            <td><input type="radio" id="ordine_m" name="ordine" value="m"></td>
-            <td><input type="radio" id="ordine_cn" name="ordine" value="n"></td>
-            <td><input type="radio" id="ordine_na" name="ordine" value="a"></td>
-            <td><input type="text" id="ordine_descrizione" name="ordine_descrizione"></td>
-            <td><input type="text" id="ordine_azione" name="ordine_azione"></td>
-        </tr>
-        <tr>
-            <td>Sollevamenti</td>
-            <td><input type="radio" id="sollevamenti_c" name="sollevamenti" value="c"></td>
-            <td><input type="radio" id="sollevamenti_m" name="sollevamenti" value="m"></td>
-            <td><input type="radio" id="sollevamenti_cn" name="sollevamenti" value="n"></td>
-            <td><input type="radio" id="sollevamenti_na" name="sollevamenti" value="a" checked></td>
-            <td><input type="text" id="sollevamenti_descrizione" name="sollevamenti_descrizione"></td>
-            <td><input type="text" id="sollevamenti_azione" name="sollevamenti_azione"></td>
-        </tr>
-        <tr>
-            <td>Attrezzature</td>
-            <td><input type="radio" id="attrezzature_c" name="attrezzature" value="c" checked></td>
-            <td><input type="radio" id="attrezzature_m" name="attrezzature" value="m"></td>
-            <td><input type="radio" id="attrezzature_cn" name="attrezzature" value="n"></td>
-            <td><input type="radio" id="attrezzature_na" name="attrezzature" value="a"></td>
-            <td><input type="text" id="attrezzature_descrizione" name="attrezzature_descrizione"></td>
-            <td><input type="text" id="attrezzature_azione" name="attrezzature_azione"></td>
-        </tr>
-        <tr>
-            <td>Guida</td>
-            <td><input type="radio" id="guida_c" name="guida" value="c" checked></td>
-            <td><input type="radio" id="guida_m" name="guida" value="m"></td>
-            <td><input type="radio" id="guida_cn" name="guida" value="n"></td>
-            <td><input type="radio" id="guida_na" name="guida" value="a"></td>
-            <td><input type="text" id="guida_descrizione" name="guida_descrizione"></td>
-            <td><input type="text" id="guida_azione" name="guida_azione"></td>
-        </tr>
-        <tr>
-            <td>Ponteggi</td>
-            <td><input type="radio" id="ponteggi_c" name="ponteggi" value="c"></td>
-            <td><input type="radio" id="ponteggi_m" name="ponteggi" value="m"></td>
-            <td><input type="radio" id="ponteggi_cn" name="ponteggi" value="n"></td>
-            <td><input type="radio" id="ponteggi_na" name="ponteggi" value="a" checked></td>
-            <td><input type="text" id="ponteggi_descrizione" name="ponteggi_descrizione"></td>
-            <td><input type="text" id="ponteggi_azione" name="ponteggi_azione"></td>
-        </tr>
-        <tr>
-            <td>PIMUS</td>
-            <td><input type="radio" id="pimus_c" name="pimus" value="c"></td>
-            <td><input type="radio" id="pimus_m" name="pimus" value="m"></td>
-            <td><input type="radio" id="pimus_cn" name="pimus" value="n"></td>
-            <td><input type="radio" id="pimus_na" name="pimus" value="a" checked></td>
-            <td><input type="text" id="pimus_descrizione" name="pimus_descrizione"></td>
-            <td><input type="text" id="pimus_azione" name="pimus_azione"></td>
-        </tr>
-        <tr>
-            <td>Quota</td>
-            <td><input type="radio" id="quota_c" name="quota" value="c"></td>
-            <td><input type="radio" id="quota_m" name="quota" value="m"></td>
-            <td><input type="radio" id="quota_cn" name="quota" value="n"></td>
-            <td><input type="radio" id="quota_na" name="quota" value="a" checked></td>
-            <td><input type="text" id="quota_descrizione" name="quota_descrizione"></td>
-            <td><input type="text" id="quota_azione" name="quota_azione"></td>
-        </tr>
-        <tr>
-            <td>Confinati</td>
-            <td><input type="radio" id="confinati_c" name="confinati" value="c"></td>
-            <td><input type="radio" id="confinati_m" name="confinati" value="m"></td>
-            <td><input type="radio" id="confinati_cn" name="confinati" value="n"></td>
-            <td><input type="radio" id="confinati_na" name="confinati" value="a" checked></td>
-            <td><input type="text" id="confinati_descrizione" name="confinati_descrizione"></td>
-            <td><input type="text" id="confinati_azione" name="confinati_azione"></td>
-        </tr>
-        <tr>
-            <td>Altro</td>
-            <td><input type="radio" id="altro_c" name="altro" value="c"></td>
-            <td><input type="radio" id="altro_m" name="altro" value="m"></td>
-            <td><input type="radio" id="altro_cn" name="altro" value="n"></td>
-            <td><input type="radio" id="altro_na" name="altro" value="a" checked></td>
-            <td><input type="text" id="altro_descrizione" name="altro_descrizione"></td>
-            <td><input type="text" id="altro_azione" name="altro_azione"></td>
-        </tr>
-    </table>
+        <div class="input-group">
+            <span class="input-group-text">n. PdL</span>
+            <input type="text" id="pdl" name="npdl">
+        </div>
 
-    <input type="radio" id="conforme" name="gravita" value="conforme" checked> <label for="conforme">conforme</label>
-    <input type="radio" id="da_migliorare" name="gravita" value="da_migliorare"> <label for="da_migliorare">da
-    migliorare</label>
-    <input type="radio" id="nc_grigia" name="gravita" value="nc_grigia"> <label for="nc_grigia">nc_grigia</label>
-    <input type="radio" id="nc_gialla" name="nc_gialla" value="nc_gialla"> <label for="nc_gialla">nc_gialla</label>
-    <input type="radio" id="nc_rossa" name="gravita" value="nc_rossa"> <label for="nc_rossa">nc_rossa</label><br>
+        <div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>C</th>
+                    <th>M</th>
+                    <th>NC</th>
+                    <th>NA</th>
+                    <th>Descrizione</th>
+                    <th>Azione</th>
+                </tr>
+                </thead>
+                <tr>
 
+                    <th scope="row">Delimitazione</th>
+                    <td><input type="radio" id="delimitazione_c" name="delimitazione" value="c" checked></td>
+                    <td><input type="radio" id="delimitazione_m" name="delimitazione" value="m"></td>
+                    <td><input type="radio" id="delimitazione_cn" name="delimitazione" value="n"></td>
+                    <td><input type="radio" id="delimitazione_na" name="delimitazione" value="a"></td>
+                    <td><input type="text" id="delimitazione_descrizione" name="delimitazione_descrizione"></td>
+                    <td><input type="text" id="delimitazione_azione" name="delimitazione_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">PdL</th>
+                    <td><input type="radio" id="pdl_c" name="pdl" value="c" checked></td>
+                    <td><input type="radio" id="pdl_m" name="pdl" value="m"></td>
+                    <td><input type="radio" id="pdl_cn" name="pdl" value="n"></td>
+                    <td><input type="radio" id="pdl_na" name="pdl" value="a"></td>
+                    <td><input type="text" id="pdl_descrizione" name="pdl_descrizione"></td>
+                    <td><input type="text" id="pdl_azione" name="pdl_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">DPI</th>
+                    <td><input type="radio" id="dpi_c" name="dpi" value="c" checked></td>
+                    <td><input type="radio" id="dpi_m" name="dpi" value="m"></td>
+                    <td><input type="radio" id="dpi_cn" name="dpi" value="n"></td>
+                    <td><input type="radio" id="dpi_na" name="dpi" value="a"></td>
+                    <td><input type="text" id="dpi_descrizione" name="dpi_descrizione"></td>
+                    <td><input type="text" id="dpi_azione" name="dpi_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ordine</th>
+                    <td><input type="radio" id="ordine_c" name="ordine" value="c" checked></td>
+                    <td><input type="radio" id="ordine_m" name="ordine" value="m"></td>
+                    <td><input type="radio" id="ordine_cn" name="ordine" value="n"></td>
+                    <td><input type="radio" id="ordine_na" name="ordine" value="a"></td>
+                    <td><input type="text" id="ordine_descrizione" name="ordine_descrizione"></td>
+                    <td><input type="text" id="ordine_azione" name="ordine_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Sollevamenti</th>
+                    <td><input type="radio" id="sollevamenti_c" name="sollevamenti" value="c"></td>
+                    <td><input type="radio" id="sollevamenti_m" name="sollevamenti" value="m"></td>
+                    <td><input type="radio" id="sollevamenti_cn" name="sollevamenti" value="n"></td>
+                    <td><input type="radio" id="sollevamenti_na" name="sollevamenti" value="a" checked></td>
+                    <td><input type="text" id="sollevamenti_descrizione" name="sollevamenti_descrizione"></td>
+                    <td><input type="text" id="sollevamenti_azione" name="sollevamenti_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Attrezzature</th>
+                    <td><input type="radio" id="attrezzature_c" name="attrezzature" value="c" checked></td>
+                    <td><input type="radio" id="attrezzature_m" name="attrezzature" value="m"></td>
+                    <td><input type="radio" id="attrezzature_cn" name="attrezzature" value="n"></td>
+                    <td><input type="radio" id="attrezzature_na" name="attrezzature" value="a"></td>
+                    <td><input type="text" id="attrezzature_descrizione" name="attrezzature_descrizione"></td>
+                    <td><input type="text" id="attrezzature_azione" name="attrezzature_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Guida</th>
+                    <td><input type="radio" id="guida_c" name="guida" value="c" checked></td>
+                    <td><input type="radio" id="guida_m" name="guida" value="m"></td>
+                    <td><input type="radio" id="guida_cn" name="guida" value="n"></td>
+                    <td><input type="radio" id="guida_na" name="guida" value="a"></td>
+                    <td><input type="text" id="guida_descrizione" name="guida_descrizione"></td>
+                    <td><input type="text" id="guida_azione" name="guida_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ponteggi</th>
+                    <td><input type="radio" id="ponteggi_c" name="ponteggi" value="c"></td>
+                    <td><input type="radio" id="ponteggi_m" name="ponteggi" value="m"></td>
+                    <td><input type="radio" id="ponteggi_cn" name="ponteggi" value="n"></td>
+                    <td><input type="radio" id="ponteggi_na" name="ponteggi" value="a" checked></td>
+                    <td><input type="text" id="ponteggi_descrizione" name="ponteggi_descrizione"></td>
+                    <td><input type="text" id="ponteggi_azione" name="ponteggi_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">PIMUS</th>
+                    <td><input type="radio" id="pimus_c" name="pimus" value="c"></td>
+                    <td><input type="radio" id="pimus_m" name="pimus" value="m"></td>
+                    <td><input type="radio" id="pimus_cn" name="pimus" value="n"></td>
+                    <td><input type="radio" id="pimus_na" name="pimus" value="a" checked></td>
+                    <td><input type="text" id="pimus_descrizione" name="pimus_descrizione"></td>
+                    <td><input type="text" id="pimus_azione" name="pimus_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Quota</th>
+                    <td><input type="radio" id="quota_c" name="quota" value="c"></td>
+                    <td><input type="radio" id="quota_m" name="quota" value="m"></td>
+                    <td><input type="radio" id="quota_cn" name="quota" value="n"></td>
+                    <td><input type="radio" id="quota_na" name="quota" value="a" checked></td>
+                    <td><input type="text" id="quota_descrizione" name="quota_descrizione"></td>
+                    <td><input type="text" id="quota_azione" name="quota_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Confinati</th>
+                    <td><input type="radio" id="confinati_c" name="confinati" value="c"></td>
+                    <td><input type="radio" id="confinati_m" name="confinati" value="m"></td>
+                    <td><input type="radio" id="confinati_cn" name="confinati" value="n"></td>
+                    <td><input type="radio" id="confinati_na" name="confinati" value="a" checked></td>
+                    <td><input type="text" id="confinati_descrizione" name="confinati_descrizione"></td>
+                    <td><input type="text" id="confinati_azione" name="confinati_azione"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Altro</th>
+                    <td><input type="radio" id="altro_c" name="altro" value="c"></td>
+                    <td><input type="radio" id="altro_m" name="altro" value="m"></td>
+                    <td><input type="radio" id="altro_cn" name="altro" value="n"></td>
+                    <td><input type="radio" id="altro_na" name="altro" value="a" checked></td>
+                    <td><input type="text" id="altro_descrizione" name="altro_descrizione"></td>
+                    <td><input type="text" id="altro_azione" name="altro_azione"></td>
+                </tr>
+            </table>
+        </div>
 
-    <button type="submit">Salva</button>
-</form>
+        <div class="input-group">
+            <div class="col-2 form-check form-check-inline">a
+                <input class="form-check-input" type="radio" id="conforme" name="gravita" value="conforme" checked>
+                <label class="form-check-label" for="conforme">conforme</label>
+                <i class="fa-solid fa-face-smile"></i>a
+            </div>
 
+            <div class="col-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="da_migliorare" name="gravita" value="da_migliorare">
+                <label class="form-check-label" for="da_migliorare">da migliorare</label>
+            </div>
+
+            <div class="col-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="nc_grigia" name="gravita" value="nc_grigia">
+                <label class="form-check-label" for="nc_grigia">nc_grigia</label>
+            </div>
+
+            <div class="col-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="nc_gialla" name="gravita" value="nc_gialla">
+                <label class="form-check-label" for="nc_gialla">nc_gialla</label>
+            </div>
+
+            <div class="col-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="nc_rossa" name="gravita" value="nc_rossa">
+                <label class="form-check-label" for="nc_rossa">nc_rossa</label><br>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salva</button>
+    </form>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
 
 </body>
 

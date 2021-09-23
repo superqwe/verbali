@@ -1,5 +1,6 @@
 import cherrypy
 import sqlite3
+import os
 
 FIN = 'base.html'
 DB_STRING = "db.sqlite"
@@ -32,11 +33,18 @@ class InserisciVerbale(object):
               altro=None, altro_descrizione=None, altro_azione=None,
               gravita=None
               ):
-
-
-
-        return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--' % (chi, npdl, dpi_descrizione)
+        return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--' % (chi, data,ora)
 
 
 if __name__ == '__main__':
-    cherrypy.quickstart(InserisciVerbale())
+    conf = {
+        '/': {
+            'tools.sessions.on': True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd())
+        },
+        '/static': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './public'
+        }
+    }
+    cherrypy.quickstart(InserisciVerbale(), '/', conf)
