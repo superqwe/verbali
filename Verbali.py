@@ -1,6 +1,7 @@
 import cherrypy
 import sqlite3
 import os
+import pandas as pd
 
 FIN = 'base.html'
 DB_STRING = "db.sqlite"
@@ -11,6 +12,9 @@ def leggi_html():
         html = fin.read()
         return html
 
+class DB(object):
+    def __init__(self):
+        pass
 
 class InserisciVerbale(object):
     @cherrypy.expose
@@ -33,6 +37,13 @@ class InserisciVerbale(object):
               altro=None, altro_descrizione=None, altro_azione=None,
               gravita=None
               ):
+
+        df = pd.DataFrame({
+            'chi': chi,
+            'data':data,
+        })
+
+
         return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--\n%s' % (chi, data,ora, delimitazione_azione)
 
 
