@@ -33,7 +33,7 @@ class InserisciVerbale(object):
               altro=None, altro_descrizione=None, altro_azione=None,
               gravita=None
               ):
-        return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--' % (chi, data,ora)
+        return 'verbale eseguito da %s - n.pdl %s<br>--->%s<--\n%s' % (chi, data,ora, delimitazione_azione)
 
 
 if __name__ == '__main__':

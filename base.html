@@ -21,7 +21,9 @@
 
     <form method="post" action="salva">
 
+
         <div class="input-group">
+            <span class="input-group-text">Emesso da</span>
             <div class="col-3 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="aspp" name="chi" value="a" checked>
                 <label class="form-check-label" for="aspp">ASPP</label>
@@ -64,8 +66,11 @@
                     <td><input type="radio" id="delimitazione_m" name="delimitazione" value="m"></td>
                     <td><input type="radio" id="delimitazione_cn" name="delimitazione" value="n"></td>
                     <td><input type="radio" id="delimitazione_na" name="delimitazione" value="a"></td>
-                    <td><input type="text" id="delimitazione_descrizione" name="delimitazione_descrizione"></td>
-                    <td><input type="text" id="delimitazione_azione" name="delimitazione_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="delimitazione_descrizione"
+                                  name="delimitazione_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="delimitazione_azione"
+                                  name="delimitazione_azione"></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">PdL</th>
@@ -73,8 +78,11 @@
                     <td><input type="radio" id="pdl_m" name="pdl" value="m"></td>
                     <td><input type="radio" id="pdl_cn" name="pdl" value="n"></td>
                     <td><input type="radio" id="pdl_na" name="pdl" value="a"></td>
-                    <td><input type="text" id="pdl_descrizione" name="pdl_descrizione"></td>
-                    <td><input type="text" id="pdl_azione" name="pdl_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="pdl_descrizione"
+                                  name="pdl_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="pdl_azione"
+                                  name="pdl_azione"></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">DPI</th>
@@ -82,8 +90,10 @@
                     <td><input type="radio" id="dpi_m" name="dpi" value="m"></td>
                     <td><input type="radio" id="dpi_cn" name="dpi" value="n"></td>
                     <td><input type="radio" id="dpi_na" name="dpi" value="a"></td>
-                    <td><input type="text" id="dpi_descrizione" name="dpi_descrizione"></td>
-                    <td><input type="text" id="dpi_azione" name="dpi_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="dpi_descrizione"
+                                  name="dpi_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="dpi_azione"
+                                  name="dpi_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Ordine</th>
@@ -91,8 +101,10 @@
                     <td><input type="radio" id="ordine_m" name="ordine" value="m"></td>
                     <td><input type="radio" id="ordine_cn" name="ordine" value="n"></td>
                     <td><input type="radio" id="ordine_na" name="ordine" value="a"></td>
-                    <td><input type="text" id="ordine_descrizione" name="ordine_descrizione"></td>
-                    <td><input type="text" id="ordine_azione" name="ordine_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="ordine_descrizione"
+                                  name="ordine_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="ordine_azione"
+                                  name="ordine_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Sollevamenti</th>
@@ -100,8 +112,10 @@
                     <td><input type="radio" id="sollevamenti_m" name="sollevamenti" value="m"></td>
                     <td><input type="radio" id="sollevamenti_cn" name="sollevamenti" value="n"></td>
                     <td><input type="radio" id="sollevamenti_na" name="sollevamenti" value="a" checked></td>
-                    <td><input type="text" id="sollevamenti_descrizione" name="sollevamenti_descrizione"></td>
-                    <td><input type="text" id="sollevamenti_azione" name="sollevamenti_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="sollevamenti_descrizione"
+                                  name="sollevamenti_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="sollevamenti_azione"
+                                  name="sollevamenti_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Attrezzature</th>
@@ -109,8 +123,10 @@
                     <td><input type="radio" id="attrezzature_m" name="attrezzature" value="m"></td>
                     <td><input type="radio" id="attrezzature_cn" name="attrezzature" value="n"></td>
                     <td><input type="radio" id="attrezzature_na" name="attrezzature" value="a"></td>
-                    <td><input type="text" id="attrezzature_descrizione" name="attrezzature_descrizione"></td>
-                    <td><input type="text" id="attrezzature_azione" name="attrezzature_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="attrezzatture_descrizione"
+                                  name="attrezzatture_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="attrezzatture_azione"
+                                  name="attrezzatture_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Guida</th>
@@ -118,8 +134,10 @@
                     <td><input type="radio" id="guida_m" name="guida" value="m"></td>
                     <td><input type="radio" id="guida_cn" name="guida" value="n"></td>
                     <td><input type="radio" id="guida_na" name="guida" value="a"></td>
-                    <td><input type="text" id="guida_descrizione" name="guida_descrizione"></td>
-                    <td><input type="text" id="guida_azione" name="guida_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="guida_descrizione"
+                                  name="guida_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="guida_azione"
+                                  name="guida_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Ponteggi</th>
@@ -127,8 +145,10 @@
                     <td><input type="radio" id="ponteggi_m" name="ponteggi" value="m"></td>
                     <td><input type="radio" id="ponteggi_cn" name="ponteggi" value="n"></td>
                     <td><input type="radio" id="ponteggi_na" name="ponteggi" value="a" checked></td>
-                    <td><input type="text" id="ponteggi_descrizione" name="ponteggi_descrizione"></td>
-                    <td><input type="text" id="ponteggi_azione" name="ponteggi_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="ponteggi_descrizione"
+                                  name="ponteggi_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="ponteggi_azione"
+                                  name="ponteggi_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">PIMUS</th>
@@ -136,8 +156,10 @@
                     <td><input type="radio" id="pimus_m" name="pimus" value="m"></td>
                     <td><input type="radio" id="pimus_cn" name="pimus" value="n"></td>
                     <td><input type="radio" id="pimus_na" name="pimus" value="a" checked></td>
-                    <td><input type="text" id="pimus_descrizione" name="pimus_descrizione"></td>
-                    <td><input type="text" id="pimus_azione" name="pimus_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="pimus_descrizione"
+                                  name="pimus_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="pimus_azione"
+                                  name="pimus_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Quota</th>
@@ -145,8 +167,10 @@
                     <td><input type="radio" id="quota_m" name="quota" value="m"></td>
                     <td><input type="radio" id="quota_cn" name="quota" value="n"></td>
                     <td><input type="radio" id="quota_na" name="quota" value="a" checked></td>
-                    <td><input type="text" id="quota_descrizione" name="quota_descrizione"></td>
-                    <td><input type="text" id="quota_azione" name="quota_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="quota_descrizione"
+                                  name="quota_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="quota_azione"
+                                  name="quota_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Confinati</th>
@@ -154,8 +178,10 @@
                     <td><input type="radio" id="confinati_m" name="confinati" value="m"></td>
                     <td><input type="radio" id="confinati_cn" name="confinati" value="n"></td>
                     <td><input type="radio" id="confinati_na" name="confinati" value="a" checked></td>
-                    <td><input type="text" id="confinati_descrizione" name="confinati_descrizione"></td>
-                    <td><input type="text" id="confinati_azione" name="confinati_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="confinati_descrizione"
+                                  name="confinati_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="confinati_azione"
+                                  name="confinati_azione"></textarea>
                 </tr>
                 <tr>
                     <th scope="row">Altro</th>
@@ -163,35 +189,37 @@
                     <td><input type="radio" id="altro_m" name="altro" value="m"></td>
                     <td><input type="radio" id="altro_cn" name="altro" value="n"></td>
                     <td><input type="radio" id="altro_na" name="altro" value="a" checked></td>
-                    <td><input type="text" id="altro_descrizione" name="altro_descrizione"></td>
-                    <td><input type="text" id="altro_azione" name="altro_azione"></td>
+                    <td><textarea class="form-control" style="height: 10px" id="altro_descrizione"
+                                  name="altro_descrizione"></textarea></td>
+                    <td><textarea class="form-control" style="height: 10px" id="altro_azione"
+                                  name="altro_azione"></textarea>
                 </tr>
             </table>
         </div>
         <div class="input-group">
             <div class="col-1 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="conforme" name="gravita" value="conforme" checked>
-                <label class="form-check-label" for="conforme"><i class="far fa-smile fa-2x"></i> </label>
+                <label class="form-check-label" for="conforme"><i class="far fa-smile fa-lg"></i> </label>
             </div>
 
             <div class="col-1 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="da_migliorare" name="gravita" value="da_migliorare">
-                <label class="form-check-label" for="da_migliorare"><i class="far fa-grin-beam-sweat fa-2x"></i></label>
+                <label class="form-check-label" for="da_migliorare"><i class="far fa-grin-beam-sweat fa-lg"></i></label>
             </div>
 
             <div class="col-1 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="nc_grigia" name="gravita" value="nc_grigia">
-                <label class="form-check-label" for="nc_grigia"><i class="far fa-meh fa-2x"></i></label>
+                <label class="form-check-label" for="nc_grigia"><i class="far fa-meh fa-lg"></i></label>
             </div>
 
             <div class="col-1 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="nc_gialla" name="gravita" value="nc_gialla">
-                <label class="form-check-label" for="nc_gialla"><i class="far fa-frown fa-2x"></i></label>
+                <label class="form-check-label" for="nc_gialla"><i class="far fa-frown fa-lg"></i></label>
             </div>
 
             <div class="col-1 form-check form-check-inline">
                 <input class="form-check-input" type="radio" id="nc_rossa" name="gravita" value="nc_rossa">
-                <label class="form-check-label" for="nc_rossa"><i class="far fa-angry fa-2x"></i></label><br>
+                <label class="form-check-label" for="nc_rossa"><i class="far fa-angry fa-lg"></i></label><br>
             </div>
         </div>
 
